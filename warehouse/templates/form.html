@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Warehouse</title>
+</head>
+<body>
+<h1>Warehouse</h1>
+<form method="POST" action="{{ url_for('form') }}">
+    {{ form.csrf_token }}
+    {{ form.name.label }}
+    {{ form.name }}
+    {{ form.quantity.label }}
+    {{ form.quantity }}
+    <input type="submit" value="Submit">
+</form>
+<p><a title="" href="http://127.0.0.1:5000/view">Click here to see data entries</a></p>
+</body>
+</html>
